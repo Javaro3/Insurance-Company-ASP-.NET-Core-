@@ -64,8 +64,6 @@ namespace lab3.HtmlParsers
             return
                 $"<tr>" +
                     $"<td>{insuranceCase.Id}</td>" +
-                    $"<td>{insuranceCase.Client}</td>" +
-                    $"<td>{insuranceCase.InsuranceAgent}</td>" +
                     $"<td>{insuranceCase.Date}</td>" +
                     $"<td>{insuranceCase.InsurancePayment}</td>" +
                     $"<td>{insuranceCase.SupportingDocument}</td>" +

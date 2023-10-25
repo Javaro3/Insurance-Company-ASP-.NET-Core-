@@ -7,7 +7,8 @@ internal class Program {
     private static void Main(string[] args) {
         var builder = WebApplication.CreateBuilder(args);
         
-        builder.Services.AddDbContext<InsuranceCompanyContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("InsuranceCompany")));
+        builder.Services.AddDbContext<InsuranceCompanyContext>
+            (options => options.UseSqlServer(builder.Configuration.GetConnectionString("InsuranceCompany")));
         builder.Services.AddTransient<InsuranceCompanyÑache>();
         builder.Services.AddMemoryCache();
         builder.Services.AddDistributedMemoryCache();

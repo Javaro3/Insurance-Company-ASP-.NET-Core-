@@ -31,8 +31,6 @@ public partial class Client : IEntity {
 
     public string PassportIdentification { get; set; } = null!;
 
-    public virtual ICollection<InsuranceCase> InsuranceCases { get; set; } = new List<InsuranceCase>();
-
     public virtual ICollection<Policy> Policies { get; set; } = new List<Policy>();
 
     public IEnumerable<IEntity> AcceptFilter(IFilterVisitor visitor, IEnumerable<IEntity> entities) {

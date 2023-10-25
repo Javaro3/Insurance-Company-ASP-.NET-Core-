@@ -1,10 +1,12 @@
 ﻿using lab3.HtmlParsers;
 using lab3.LocalStorage;
 using lab3.Services;
+using System.ComponentModel.DataAnnotations;
 
 namespace lab3.Models;
 
 public partial class PolicyInsuranceCase : IEntity {
+    [Key]
     public int PolicyId { get; set; }
 
     public int InsuranceCaseId { get; set; }
